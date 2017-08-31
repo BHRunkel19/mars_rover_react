@@ -22,3 +22,45 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+body{
+  background: black;
+  color: white;
+}
+
+h1{
+  text-align: center; 
+}
+
+.form_wrapper{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid black;
+  background: blue;
+  border: 2px solid white;
+}
+
+.form_wrapper_two{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.image_grid{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.pics_grid{
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  height: 200px;
+  width: 40%;
+  margin: 20px;
+  border: 1px solid white;
+}

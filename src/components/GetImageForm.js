@@ -53,6 +53,8 @@ class GetImageForm extends Component {
     return (
       <div className="form_container">
         <div className="form-group">
+
+          <div className="form_wrapper">
           <label htmlFor="rover">
             Select Rover:
           </label>
@@ -70,8 +72,16 @@ class GetImageForm extends Component {
           <label htmlFor="sol">Martian Sol: 1000-2000</label>
           <input type="number" onChange={this.handleSol} max="2000" min="1000" value={this.state.value}/>
           <GetImageButton search={this.fetchRoverImage}/>
-          <h1 className="roverName">{this.state.rover}</h1>
+          </div>
+
+          <div className="form_wrapper_two">
+          <h3 className="roverName">View from: {this.state.rover}</h3>
+          </div>
+
+          <div className="image_grid">
           <ImageDisplay photos={this.state.images}/>
+          </div>
+
         </div>
       </div>
 
