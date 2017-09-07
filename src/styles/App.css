@@ -24,22 +24,44 @@
 }
 
 body{
-  background: black;
+  background: url('./space-1.jpg');
   color: white;
 }
 
 h1{
-  text-align: center; 
+  font-size: 56px;
+}
+
+h1, h4{
+  text-align: center;
+}
+
+select{
+  height: 25px;
 }
 
 .form_wrapper{
   display: flex;
   justify-content: space-around;
-  padding: 20px;
-  margin-top: 20px;
-  border: 2px solid black;
-  background: blue;
+  padding: 10px;
+  height: 50px;
+  margin-top: 10px;
+  padding-top: 40px;
+  background: grey;
   border: 2px solid white;
+  border-radius: 20px;
+}
+
+input{
+  height: 20px;
+}
+
+label{
+  font-size: 25px;
+}
+
+button{
+  height: 25px;
 }
 
 .form_wrapper_two{
@@ -56,6 +78,7 @@ h1{
 .pics_grid{
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 img{
